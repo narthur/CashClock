@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CashClock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+
+<table>
+    <tbody>
+    <tr>
+        <td>Time</td>
+        <td id="time">00:00:00</td>
+    </tr>
+    <tr>
+        <td>Earned</td>
+        <td id="earned">$0.00</td>
+    </tr>
+    <tr>
+        <td>10 Years</td>
+        <td id="valInTen">$0.00</td>
+    </tr>
+    <tr>
+        <td>50 Years</td>
+        <td id="valInFifty">$0.00</td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+
+<form>
+    <label>Hourly Rate</label><br>
+    <input id="hourlyRate" type="number" min="0.00" max="10000.00" step="0.01" value="18.50" />
+
+    <br><br>
+
+    <label>Interest Rate</label><br>
+    <input id="returnRate" type="number" min="0" max="1" step="0.01" value=".07" />
+
+    <br><br>
+
+    <button id="start">Start</button>
+    <button id="pause">Pause</button>
+    <button id="stop">Reset</button>
+</form>
+
+</body>
+</html>
